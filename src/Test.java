@@ -9,7 +9,7 @@ public class Test {
 
 	public static void main(String args[]){
 		
-		Address add = new Address("Malleswaram ","bangalore","Karnataka","560055");
+			Address add = new Address("Malleswaram ","bangalore","Karnataka","560055");
 		Login abc = new Login("feroz","siddiqui","student",new Date(),1,add);
 		
 	
