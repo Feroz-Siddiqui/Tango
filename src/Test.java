@@ -3,6 +3,7 @@ import java.util.Date;
 import org.hibernate.Session;
 
 import pojo.Login;
+import pojo.Report;
 import pojo.Address;
 
 public class Test {
@@ -20,6 +21,13 @@ public class Test {
 		
 		
 		session.close();
+/*Report reporrt = new Report("first Report","Standard","/Means","students");
+
+Session session = HibernateSessionFactory.getSession();
+session.getTransaction().begin();
+session.save(reporrt);
+session.getTransaction().commit();*/
+	
 	}
 	
 }

@@ -20,6 +20,12 @@
 		</property>
 		<mapping class="pojo.Login" />
 		<mapping class="pojo.Address" />
+		<mapping class="pojo.Report" />
+		<mapping class="testpojo.Email" />
+		<mapping class="testpojo.Message" />
+		<mapping class="testpojo.SimpleObject" />
+		<mapping class="testpojo.Library" />
+		<mapping class="testpojo.Book" />
 
 		<!-- -->
 	</session-factory>

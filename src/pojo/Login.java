@@ -1,6 +1,8 @@
 package pojo;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -16,8 +18,8 @@ import javax.persistence.Table;
 @Table(name = "users",schema = "feroz")
 public class Login {
 	 @Id 
-	   @GeneratedValue
-	   @Column(name = "id")
+	 @GeneratedValue(strategy=GenerationType.IDENTITY)
+	 @Column(name = "id")
 	   private int id;
 
 	   @Column(name = "first_name")
@@ -37,7 +39,6 @@ public class Login {
 
 		@OneToOne(cascade = CascadeType.ALL)
 		 private Address studentAddress;
-
 
 
 	public Login(String firstName, String lastName, String userType, Date createAt, int loginCount,
