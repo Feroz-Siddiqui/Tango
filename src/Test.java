@@ -17,6 +17,8 @@ public class Test {
 		session.getTransaction().begin();
 		session.save(abc);
 		session.getTransaction().commit();
+		
+		
 		session.close();
 	}
 	
